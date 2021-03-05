@@ -1,8 +1,8 @@
 
 # Create a VPC
-resource "aws_vpc" "TB-VPC" {
-  cidr_block = "192.168.0.0/24"
+resource "aws_vpc" "vpc" {
+  cidr_block = "10.0.0.0/16"
   tags = {
-    "Name" = "terraform_practice"
+    "Name" = "Wordpress_VPC"
   }
 }
