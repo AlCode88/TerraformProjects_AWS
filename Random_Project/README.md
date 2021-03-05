@@ -1,5 +1,5 @@
 #Terraform project
-This is a random practice project. 
+
 
 ## Resoures created.
 
