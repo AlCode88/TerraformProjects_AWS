@@ -166,3 +166,12 @@ resource "aws_route_table_association" "Private-subnet3" {
   subnet_id =aws_subnet.private3.id
 }
 ############################################################
+
+resource "aws_db_subnet_group" "Private_subnet_group" {
+  name       = "main"
+  subnet_ids = [aws_subnet.private1.id, aws_subnet.private2.id,aws_subnet.private3.id]
+
+  tags = {
+    Name = "Private_Subnet_groups"
+  }
+}
