@@ -1,3 +1,4 @@
+# This is Variables for the Security Group
 variable "ingress"{
   type = list(number)
   default = [80,443]
@@ -7,10 +8,7 @@ variable "egress"{
   default = [80,443]
 }                                               
 
-output "SG-group" {
-  value = aws_security_group.terraformSG.id
-}
-
+# This Security Group with Dynamic Block example
 resource "aws_security_group" "terraformSG" {
   name        = "webserverSG"
   description = "This webserver SG"
@@ -37,3 +35,7 @@ dynamic "egress" {
   }
 }
 
+# Ouptu for the Security Group ID
+output "SG-group" {
+  value = aws_security_group.terraformSG.id
+}
