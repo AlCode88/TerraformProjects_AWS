@@ -8,19 +8,20 @@ terraform {
     }
   }
 }
-
+# db module
 module "db" {
     source = "./db"
 }
-
-module "web" {
-    source = "./web"
-}
-
+# output for the db module in the eip resource outputs
 output "db_PrivateIP" {
     value = module.db.db_privateIP
 }
 
+# web module
+module "web" {
+    source = "./web"
+}
+# output for the web module in the web resource outputs
 output "web_PublicIP" {
     value = module.web.Public_IP
 }
