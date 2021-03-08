@@ -4,3 +4,7 @@ resource "aws_network_interface" "terraform_network_interface" {
   private_ips     = ["10.0.1.50"]
   security_groups = [aws_security_group.terraform_project1_SG.id]
 }
+
+output "network-interface" {
+  value = aws_network_interface.terraform_network_interface.id
+}

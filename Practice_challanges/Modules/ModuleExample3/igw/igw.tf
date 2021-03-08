@@ -6,3 +6,7 @@ resource "aws_internet_gateway" "terraform_project1_Internet_Gateway" {
     Name = "Terraform_project1_IG"
   }
 }
+
+output "Internet_gateway-id" {
+  value = aws_internet_gateway.terraform_project1_Internet_Gateway.id
+}

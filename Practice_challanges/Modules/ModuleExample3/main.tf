@@ -9,3 +9,34 @@ terraform {
   }
 }
 
+module "eip-module" {
+  source = "./eip"
+}
+
+module "igw-module" {
+  source = "./igw"
+}
+
+module "network_interface-module"{
+  source = "./network_interface"
+}
+
+module "route_table-module" {
+  source = "./route-table"
+}
+
+module "sg-module" {
+  source = "./sg"
+}
+
+module "subnet-module" {
+  source = "./subnet"
+}
+
+module "vpc-module" {
+  source = "./vpc"
+}
+
+module "web-module" {
+  source = "./web"
+}
