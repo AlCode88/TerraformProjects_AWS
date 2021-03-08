@@ -12,11 +12,11 @@ variable "ingress"{
 }                                       
 variable "egress"{
   type = list(number)
-  default = [80,443,25,3306]
+  default = [80,443,3306]
 }                                               
 resource "aws_security_group" "terraformSG" {
   name        = "terraformEC2"
-  description = "allow the trafic from 22"
+  description = "Ports-80,443,3306"
   
   dynamic "ingress" {
     iterator = port
