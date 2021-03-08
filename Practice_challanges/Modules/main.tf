@@ -14,3 +14,7 @@ module "ec2module" {
     source = "./EC2"
     ec2-name = "Module-Name"
 }
+
+output "instance_id" {
+    value = module.ec2module.instance_id
+}

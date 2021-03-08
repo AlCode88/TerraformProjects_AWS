@@ -10,3 +10,7 @@ resource "aws_instance" "terraformEC2" {
    "Name" = "var.ec2-name"
  }
 }
+
+output "instance_id" {
+    value = aws_instance.terraformEC2.id
+}
