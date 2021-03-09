@@ -17,3 +17,41 @@ module "any-name-module" {
     instance_type = "t2.medium"
     webserver_name = "test"
 }
+
+# you can specify multiple modules inside the parent module
+/*
+Example how to set to the different region you need different providers file
+
+provider "aws" {
+  alias = "east"
+  region = "us-west-1"
+}
+
+*/
+/*
+Another Module for different region
+module "any-name-module-east" {
+    source = "../modules/child-module"
+    providers = {
+      aws = aws.east
+  }
+    vpc = aws_vpc.main.id        
+    cidr_block = "10.0.0.0/16"
+    ami = "ami-047a51fa27710816e" #ami is restricted to the region
+    instance_type = "t2.medium"
+    webserver_name = "test"
+}
+*/
+
+output "instance_data" {
+    value = module.any-name-module.instance
+}
+
+/*
+ This is how you use the output of the resource
+ module - module/name - intance (the output name in the childmodule/outputs.tf file)
+
+resource "aws_elb" "main" {
+     instances = module.any-name-module.instance.id
+   }
+*/
