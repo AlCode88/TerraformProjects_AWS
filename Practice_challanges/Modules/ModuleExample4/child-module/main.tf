@@ -10,15 +10,15 @@ terraform {
 }
 
 resource "aws_subnet" "module-subnet" {
-  vpc_id = var.vpc.id
-  cidr_block = var.cidr_block
+  vpc_id = var.vpc.id         # Defined in the variable file
+  cidr_block = var.cidr_block # Defined in the variable file
 }
 
 resource "aws_instacne" "module_instance" {
- ami = var.ami
- instance_type = var.instance_type
+ ami = var.ami   # Defined in the varibale file
+ instance_type = var.instance_type # defined in the variable file
  subnet_id = aws_subnet.module-subnet.id
  tags = {
-     Name = "${var.webserver_name} webserver"
+     Name = "${var.webserver_name} webserver" #Defined in the variable file
  }
 }
