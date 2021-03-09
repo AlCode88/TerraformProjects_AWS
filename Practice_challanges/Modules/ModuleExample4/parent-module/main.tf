@@ -14,7 +14,7 @@ module "any-name-module" {
     vpc = aws_vpc.main.id        
     cidr_block = "10.0.0.0/16"
     ami = "ami-047a51fa27710816e"
-    instance_type = "t2.medium"
+    instance_type = "t2.micro"
     webserver_name = "test"
 }
 
@@ -43,7 +43,7 @@ module "any-name-module-east" {
 }
 */
 
-output "instance_data" {
+output "instance_public_ip" {
     value = module.any-name-module.instance
 }
 
