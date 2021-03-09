@@ -1,5 +1,5 @@
 # (.var.vpc_id) - resource : aws_subnet, childmodule/main.tf
-variable "vpc_id" {
+variable "vpc" {
   type = string
   description = "VPC Id"
 }
@@ -20,10 +20,12 @@ variable "ami" {
 variable "instance_type" {
   type = string
   description = "Instance_type"
+  default = "t2.micro"
 }
 
 # (.var.webserver_name) - resource : aws_instance, childmodule/main.tf 
 variable "webserver_name" {
   type = string
   description = "Web server name"
+  
 }
