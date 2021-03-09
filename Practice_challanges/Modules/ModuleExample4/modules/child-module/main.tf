@@ -9,6 +9,7 @@ terraform {
   }
 }
 
+
 resource "aws_subnet" "module-subnet" {
   vpc_id = var.vpc         # Defined in the variable file
   cidr_block = var.cidr_block # Defined in the variable file
@@ -22,3 +23,4 @@ resource "aws_instance" "module_instance" {
      Name = "${var.webserver_name} webserver" #Defined in the variable file
  }
 }
+
