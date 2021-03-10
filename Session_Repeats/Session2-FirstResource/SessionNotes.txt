@@ -1,0 +1,17 @@
+Terraform is plugin based architecture.
+
+- .terraform.lock.hcl - will record the providers selections. 
+
+- terraform fmt - will help you to organize your code porperly.
+
+- terraform init - will initialize the plugins
+
+- terraform plan - will help you to see the changes that you will apply.
+
+- /providers.tf is the file where you need to configure the setup.
+
+-  "~>" - Lazy constrain - means the version can be dynaic for example "~> 3.0" it can be 
+3.0 and up 3.1, 3.2 and etc. you can hard code the version or if you want to specify somethin in between
+you can use version = ">= 3.0 <4" it will be something in between. 
+
+- by defaut yuor credentials are stored ~/.aws/username/credentials
