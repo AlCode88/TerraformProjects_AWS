@@ -10,8 +10,28 @@ Terraform is plugin based architecture.
 
 - /providers.tf is the file where you need to configure the setup.
 
--  "~>" - Lazy constrain - means the version can be dynaic for example "~> 3.0" it can be 
-3.0 and up 3.1, 3.2 and etc. you can hard code the version or if you want to specify somethin in between
-you can use version = ">= 3.0 <4" it will be something in between. 
+-  "~>" - Lazy constrain - means the version can be dynamic for example "~> 3.0" it can be 
+3.0 and up 3.1, 3.2 and etc. you can hard code the version or if you want to specify something in between
+you can use versioning like = ">= 3.0 <4" which means more than 3 and less than 4 
 
-- by defaut yuor credentials are stored ~/.aws/username/credentials
+- by defaut yuor credentials are stored ~/.aws/username/credentials file in. 
+
+- We can use the "role" to create a resource. For the "role" it can be any resource that will go and create other
+resource on your behalf but for that you need to have a proper role given to your resource and usually it is either EC2 or Lambda
+go to the IAM and create a role that you will use to create a resources in our case we just gave an admin role but you can also 
+customize it depending on who you are and which environement you work for. Go to IAM press "create a role" choose EC2, and for the policy
+you can give an admin access or any custom access.
+    After creating a role we need to go back to the instance and attach the role to the instance that has admin role. 
+
+- "know after apply" - resource will be know after apply.
+
+- "terraform apply" -  will create a resources and if you want to auto approve the changes or applies you need to run 
+"terraform applu -auto-approve". 
+
+- "required_version" in providers.tf under the terraform will configure the terraform version to be specified and we can do 
+the lazy constrain for the version that we want to apply. This is mainly to specify what kind of version of terraform we would
+like to use.
+
+- "Yellow ~"  will update resource in place which means it will not going to destroy te resource one of the examples are tags.
+
+- "tfstate" file will keep saves the whole configuration of the existing resources and infrastructure
