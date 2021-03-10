@@ -23,4 +23,3 @@ resource "aws_instance" "any-custom-name" {
     "Name" = "First-instance"
   }
 }
-
