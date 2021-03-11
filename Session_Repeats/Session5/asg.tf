@@ -1,25 +1,12 @@
-resource "aws_launch_configuration" "webserver_LaunchConfiguration" {
-  name_prefix   = "${var.env}-Webserver_LaunchConfiguration"
-  image_id      = data.aws_ami.DataSource_ForAMI.image_id
-  instance_type = var.instance_type
-
-  lifecycle {
-    create_before_destroy = true
-  }
-
-  user_data = data.template_file.DataSource_templateFile.rendered
-  security_groups = [aws_security_group.SecurityGroup1.id]
-}
-
 resource "aws_autoscaling_group" "webserver_asg" {
-  name = "${var.env}-webserverASG"
-  vpc_zone_identifier = data.aws_subnet_ids.Default_VPC.ids
-  desired_capacity   = 1
-  max_size           = 2
-  min_size           = 1
-  force_delete = true
+  name                 = "${var.env}-webserverASG"
+  vpc_zone_identifier  = data.aws_subnet_ids.Default_VPC.ids
+  desired_capacity     = 1
+  max_size             = 2
+  min_size             = 1
+  force_delete         = true
   launch_configuration = aws_launch_configuration.webserver_LaunchConfiguration.name
-  health_check_type = "EC2"
+  health_check_type    = "EC2"
   tag {
     key                 = "Name"
     value               = "${var.env}-webserver"
@@ -40,4 +27,9 @@ data "aws_vpc" "Default_VPC" {
 
 data "aws_subnet_ids" "Default_VPC" {
   vpc_id = data.aws_vpc.Default_VPC.id
+}
+
+resource "aws_autoscaling_attachment" "webserver_tg_asg_attachment" {
+  autoscaling_group_name = aws_autoscaling_group.webserver_asg.id
+  alb_target_group_arn   = aws_lb_target_group.WebserverTargetGroup.arn
 }
