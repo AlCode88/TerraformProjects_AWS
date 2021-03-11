@@ -14,7 +14,7 @@ provider "aws" {
 }
 #First instance
 resource "aws_instance" "any-custom-name" {
-  ami           = "ami-0915bcb5fa77e4892" 
+  ami           = data.aws_ami.DataSource_ForAMI.id 
   instance_type = "t2.micro"             
   vpc_security_group_ids = [ aws_security_group.SecurityGroup1.id]
   user_data = data.template_file.DataSource_templateFile.rendered
@@ -23,6 +23,16 @@ resource "aws_instance" "any-custom-name" {
     Name2 = format ("First -%s", var.env) 
     Environment = var.env # variable.tf
   }
+}
+# Data Source for the AMI
+data "aws_ami" "DataSource_ForAMI"  {
+ most_recent = true
+ owners = ["self"]
+ 
+ filter {
+   name   = "name"
+   values = ["CustomImage"]
+ }
 }
 # DataSource for the template file
 data "template_file" "DataSource_templateFile" {
