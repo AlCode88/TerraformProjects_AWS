@@ -7,16 +7,16 @@ resource "aws_launch_configuration" "webserver_LaunchConfiguration" {
     create_before_destroy = true
   }
 
-  user_data = data.template_file.DataSource_templateFile.rendered
+  user_data       = data.template_file.DataSource_templateFile.rendered
   security_groups = [aws_security_group.SecurityGroup1.id]
 }
 
 resource "aws_autoscaling_group" "webserver_asg" {
-  vpc_zone_identifier = data.aws_subnet_ids.Default_VPC.ids
-  desired_capacity   = 1
-  max_size           = 2
-  min_size           = 1
-  force_delete = true
+  vpc_zone_identifier  = data.aws_subnet_ids.Default_VPC.ids
+  desired_capacity     = 1
+  max_size             = 2
+  min_size             = 1
+  force_delete         = true
   launch_configuration = aws_launch_configuration.webserver_LaunchConfiguration.name
 
   tag {

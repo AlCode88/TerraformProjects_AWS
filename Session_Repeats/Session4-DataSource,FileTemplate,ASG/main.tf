@@ -14,25 +14,25 @@ provider "aws" {
 }
 #First instance
 resource "aws_instance" "any-custom-name" {
-  ami           = data.aws_ami.DataSource_ForAMI.id 
-  instance_type = var.instance_type            
-  vpc_security_group_ids = [ aws_security_group.SecurityGroup1.id]
-  user_data = data.template_file.DataSource_templateFile.rendered
+  ami                    = data.aws_ami.DataSource_ForAMI.id
+  instance_type          = var.instance_type
+  vpc_security_group_ids = [aws_security_group.SecurityGroup1.id]
+  user_data              = data.template_file.DataSource_templateFile.rendered
   tags = {
-    Name = "First-${var.env}" 
-    Name2 = format ("First -%s", var.env) 
+    Name        = "First-${var.env}"
+    Name2       = format("First -%s", var.env)
     Environment = var.env # variable.tf
   }
 }
 # Data Source for the AMI
-data "aws_ami" "DataSource_ForAMI"  {
- most_recent = true
- owners = ["self"]
- 
- filter {
-   name   = "name"
-   values = ["CustomImage"]
- }
+data "aws_ami" "DataSource_ForAMI" {
+  most_recent = true
+  owners      = ["self"]
+
+  filter {
+    name   = "name"
+    values = ["CustomImage"]
+  }
 }
 # DataSource for the template file
 data "template_file" "DataSource_templateFile" {
@@ -46,7 +46,7 @@ resource "aws_security_group" "SecurityGroup1" {
   name        = "Terraform Security Group1"
   description = "Allow http traffic"
 
-tags = {
+  tags = {
     Name = "Terraform-SG1"
   }
 }
