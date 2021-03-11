@@ -12,27 +12,25 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
-# There is an required section in the resource that you need to specify
-# For instance required part is ami and instance type.
-
 #First instance
 resource "aws_instance" "any-custom-name" {
-  ami           = "ami-0915bcb5fa77e4892" # Reuired field
-  instance_type = "t2.micro"             # Required field
+  ami           = "ami-0915bcb5fa77e4892" 
+  instance_type = "t2.micro"             
   vpc_security_group_ids = [ aws_security_group.SecurityGroup1.id]
-  # user_data = file ("userdata.sh")
+  user_data = data.template_file.DataSource_templateFile.rendered
   tags = {
-    Name = "First-${var.env}" # wrapp the var.env with ${} so the first can stay and we can reuse the rest.
-    Name2 = format ("First -%S", var.env) # "format" fuction does the same as interpolation above.
-    Environment = var.env # variable
+    Name = "First-${var.env}" 
+    Name2 = format ("First -%s", var.env) 
+    Environment = var.env # variable.tf
   }
 }
-
-# DataSource for the file template
+# DataSource for the template file
 data "template_file" "DataSource_templateFile" {
   template = file("userdata.sh")
+  vars = {
+    env = var.env
+  }
 }
-
 # Security Group Resource
 resource "aws_security_group" "SecurityGroup1" {
   name        = "Terraform Security Group1"
