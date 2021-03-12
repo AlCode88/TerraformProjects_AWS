@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "remote_state" {
-  bucket = "RemoteStateBucket"
+  bucket = "terraform-remote-state-alcode88"
 
   versioning {
     enabled = true
@@ -36,7 +36,7 @@ data "aws_iam_policy_document" "state_policy_document" {
 
     principals {
         type = "AWS"
-        identifiers = ["arn:aws:iam::707493311370:user/terraform"]
+        identifiers = ["arn:aws:iam::799700054245:user/terraform"]
     }
   }
 
@@ -51,7 +51,7 @@ data "aws_iam_policy_document" "state_policy_document" {
 
     principals {
         type = "AWS"
-        identifiers = ["arn:aws:iam::707493311370:user/terraform"]
+        identifiers = ["arn:aws:iam::799700054245:user/terraform"]
     }
   }
 }
