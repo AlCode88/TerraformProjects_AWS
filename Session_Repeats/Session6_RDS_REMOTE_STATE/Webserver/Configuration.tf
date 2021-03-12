@@ -1,4 +1,17 @@
-
+# Terraform configuration
+terraform {
+  required_version = "~> 0.14.0"
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 3.31.0"
+    }
+  }
+}
+# Providers configuration
+provider "aws" {
+  region = "us-east-1"
+}
 
 # Data Source for the AMI
 data "aws_ami" "DataSource_ForAMI" {
@@ -15,6 +28,8 @@ data "template_file" "DataSource_templateFile" {
   template = file("userdata.sh")
   vars = {
     env = var.env
+    address = data.terraform_remote_state.rds.outputs.address
+    username = data.terraform_remote_state.rds.outputs.username
   }
 }
 # Webserver Security Group 
@@ -46,7 +61,6 @@ resource "aws_security_group_rule" "egress_webserver" {
   cidr_blocks       = ["0.0.0.0/0"]
   security_group_id = aws_security_group.WebserverSG.id
 }
-
 
 # AWS Launch Configuratio
 resource "aws_launch_configuration" "webserver_LaunchConfiguration" {
