@@ -7,6 +7,7 @@ resource "aws_db_instance" "terraform_rds" {
   name                 = "maindb"          # The actual database name inside of the db not the console name, and you can setup only one db creatinon
   username             = "admin"           # it is the user name for the db inside 
   password             = random_password.db_random_password.result
-  skip_final_snapshot = var.skip_snapshot  #false # this setting is either to keep the snapshot or not, by defualt it is set to true but we can use the variable and make it reusable 
+  skip_final_snapshot = var.skip_snapshot  #false # this setting is either to keep the snapshot or not, by defualt it is set to true but we can use the variable and make it reusable
+  final_snapshot_identifier = var.skip_snapshot == true ? null :"${var.env}-rds-snapshot"   # "If" condition, true ? null : "name_snapshot" this value.
   # parameter_group_name = "default.mysql5.7" - # it is a settings inside for he db  
 }

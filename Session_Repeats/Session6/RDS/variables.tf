@@ -5,5 +5,5 @@ variable "env" {
 # DB snapshot variable 
 variable "skip_snapshot" {
   type = bool 
-  value = true
+  default = true
 }
