@@ -42,6 +42,7 @@ resource "aws_security_group" "WebserverSG" {
 
 # Webserver Security Group Rule
 resource "aws_security_group_rule" "http_from_alb" {
+  description = "this is ingress rule for the alb"
   type                     = "ingress"
   from_port                = 80
   to_port                  = 80
@@ -50,6 +51,7 @@ resource "aws_security_group_rule" "http_from_alb" {
   security_group_id        = aws_security_group.WebserverSG.id
 }
 resource "aws_security_group_rule" "egress_webserver" {
+  description = "this is egress rule for the alb"
   type              = "egress"
   from_port         = 0
   to_port           = 0

@@ -38,11 +38,11 @@ resource "aws_lb_listener" "main" {
 
 # ALB Security Group
 resource "aws_security_group" "ALB-SG" {
-  name        = "${var.env}-alb-WebeserverSG"
+  name        = "${var.env}ALB-security-group"
   description = "Allow http traffic"
 
   tags = {
-    Name = "${var.env}-Alb-WebeserverSG"
+    Name = "${var.env}ALB-SecurityGroup"
   }
 }
 

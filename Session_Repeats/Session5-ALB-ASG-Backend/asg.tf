@@ -1,6 +1,7 @@
 resource "aws_autoscaling_group" "webserver_asg" {
-  name                 = "${var.env}-webserverASG"
+  name                 = "${var.env}_WebserverASG"
   vpc_zone_identifier  = data.aws_subnet_ids.Default_VPC.ids
+  target_group_arns = [ aws_lb_target_group.WebserverTargetGroup.arn ]
   desired_capacity     = 1
   max_size             = 2
   min_size             = 1
@@ -9,7 +10,7 @@ resource "aws_autoscaling_group" "webserver_asg" {
   health_check_type    = "EC2"
   tag {
     key                 = "Name"
-    value               = "${var.env}-webserver"
+    value               = "${var.env}-WebserverASG"
     propagate_at_launch = true
   }
 
