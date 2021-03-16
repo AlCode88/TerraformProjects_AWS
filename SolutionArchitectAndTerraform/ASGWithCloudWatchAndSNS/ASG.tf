@@ -1,7 +1,7 @@
 ################## Launch Configuration ##############################
 resource "aws_launch_configuration" "Soulution_Architect_ASG" {
   name_prefix     = "Solution_launch_configuration"
-  image_id        = var.AMIS[var.AWS_REGION]
+  image_id        = var.AMIS[var.region]
   instance_type   = "t2.micro"
   key_name        = aws_key_pair.mykeypair.key_name
   security_groups = [aws_security_group.allow-ssh.id]
@@ -89,3 +89,4 @@ resource "aws_cloudwatch_metric_alarm" "CloudWatch_cpu_ScaleDown_Alarm" {
   actions_enabled = true
   alarm_actions   = [aws_autoscaling_policy.ASG_cpu_ScaleDown_Policy.arn]
 }
+
