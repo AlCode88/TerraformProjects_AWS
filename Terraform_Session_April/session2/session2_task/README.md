@@ -1,5 +1,5 @@
 <h1><b>Session 2 Task</b></h1>
-<b> Create an EC2 instance with the following configurations: </b>
+<b> 1) Create an EC2 instance with the following configurations: </b>
 
 <br> a) Region: us-west-2 </br>
 <br> b) AMI: Centos7 </br>
@@ -14,3 +14,8 @@
 <br>    sudo systemctl restart httpd -y </br>
 <br>    sudo echo "Hello from Web Instance" > /var/www/html/index.html </br>
 <br>    sudo chown -R apache:apache /vat/www/html </br>
+
+<br> 2.Onceyoucreateyourinstance,dothefollowing </br>
+<br>a) Create a public repository in your Github account and name or </br> <br>"Terraform-sessioor </br> 
+<br>b) Clone the repository and create the folders called Session-1 Session-2</br> 
+<br>c) Inside Session-1 directory, write the summeries and provide examples  </br> <br>orscenarios for the following topics: </br> 
