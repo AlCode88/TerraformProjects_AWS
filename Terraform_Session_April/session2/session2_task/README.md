@@ -15,7 +15,7 @@
 <br>    sudo echo "Hello from Web Instance" > /var/www/html/index.html </br>
 <br>    sudo chown -R apache:apache /vat/www/html </br>
 
-<br> 2.Onceyoucreateyourinstance,dothefollowing </br>
+<br><b> 2.Onceyoucreateyourinstance,dothefollowing </br></b>
 <br>a) Create a public repository in your Github account and name or </br> <br>"Terraform-sessioor </br> 
 <br>b) Clone the repository and create the folders called Session-1 Session-2</br> 
 <br>c) Inside Session-1 directory, write the summeries and provide examples  </br> <br>orscenarios for the following topics: </br> 
