@@ -1,5 +1,6 @@
 <h1><b>Session 2 Task</b></h1>
-<b> Create an EC2 instance with the following configurations: <b>
+<b> Create an EC2 instance with the following configurations: </b>
+
 a) Region: us-west-2
 b) AMI: Centos7
 c) Security Group: default
