@@ -9,7 +9,7 @@ variable "egress" {
     default = [80,22]
 }
 
-
+# Dynamic SG
 resource "aws_security_group" "taskSG" {
   name        = "task_session2_SG"
   description = "This webserver SG"
