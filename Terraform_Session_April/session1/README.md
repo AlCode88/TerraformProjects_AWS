@@ -68,9 +68,5 @@ For these reasons, most IaC is implemented as immutable infrastructure—infrast
 - The idempotent characteristic provided by IaC tools ensures that, even if the same code is applied multiple times, the result remains the same.
 
 **<ins>Link to the Source</ins>**
-<br>1. [YouTube](https://www.youtube.com/watch?v=UaKZ4wKytcA&ab_channel=CoreySchafer)
-<br>2. [Medium.com](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
-
-<div style="background-color:rgba(0, 0, 0, 0.0470588); text-align:center; vertical-align: middle; padding:40px 0; margin-top:30px">
-<a href="/blog">VIEW THE BLOG</a>
-</div>
+➡️<br>1. [YouTube](https://www.youtube.com/watch?v=UaKZ4wKytcA&ab_channel=CoreySchafer)
+➡️<br>2. [Medium.com](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
