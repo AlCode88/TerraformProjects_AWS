@@ -1,4 +1,4 @@
-### What is the Infrastructure as a Code ✅
+# What is the Infrastructure as a Code ✅
 
  * Infrastructure as Code (IaC) is the **`managing and provisioning of infrastructure through code`** instead of through manual processes.
  *  Infrastructure as code is the **`process of managing and provisioning computer data centers through machine-readable definition files,`** rather than physical hardware configuration or interactive configuration tools.
@@ -6,6 +6,6 @@
  * It **`ensures that you provision the same environment`** every time.
  * By codifying and documenting your configuration specifications, IaC aids configuration management and helps you to avoid undocumented, ad-hoc configuration changes.
  ### Link to the Source
- 	[RedHat](https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac#:~:text=Infrastructure%20as%20Code%20(IaC)%20is,to%20edit%20and%20distribute%20configurations.)
+ [RedHat](https://www.redhat.com/en/topics/automation/)
 
 # What is the difference between immutable infra vs mutable infra?
