@@ -42,9 +42,9 @@ For these reasons, most IaC is implemented as immutable infrastructure—infrast
 - Good Example is Ansible where you have to define step by step solutions to get the final result. 
 
 **To install apache on CentOS it is important to give exact steps or it will fail**
-1.      `- name: Install httpd on CentOS`
-2.        `when:`
-3.        `- ansible_facts['distribution'] == "CentOS"`
-4.        `yum:`
-5.          `name: httpd`
-6.          `state: present`
+```
+1.       - name: Install httpd on CentOS
+2.         yum:
+3.          name: httpd
+4.          state: present
+```
