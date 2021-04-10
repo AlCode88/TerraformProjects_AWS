@@ -48,7 +48,7 @@ For these reasons, most IaC is implemented as immutable infrastructure—infrast
 3.          name: httpd
 4.          state: present
 ```
-#### DECLARATIVE APPROACH
+#### <ins> DECLARATIVE APPROACH </ins>
 - You just giving the desired state without really specifying the steps that needs to be taken. 
 - Declaraion of the final result.
 - Good example is Terraform
