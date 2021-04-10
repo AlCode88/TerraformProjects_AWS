@@ -1,4 +1,4 @@
-# WHAT IS THE INFRASTRUCTURE AS A CODE ✅ 🧑‍💻
+# WHAT IS THE INFRASTRUCTURE AS A CODE ✅
  * You **`write`** and **`execute`** the code to **`define, deploy, update,`** and **`destroy`** your infrastructure
  * Infrastructure as Code (IaC) is the **`managing`** and **`provisioning of infrastructure through code`** instead of through manual processes.
  *  Infrastructure as code is the **`process of managing and provisioning computer data centers through machine-readable definition files,`** rather than physical hardware configuration or interactive configuration tools.
@@ -15,7 +15,7 @@
 
 
 # WHAT IS THE DIFFERENCE BETWEEN MUTABLE INFRASTRUCTURE AND IMMUTABLE INFRASTRUCTURE ✅
-🧑‍💻
+
 ## IMMUTABLE INFRASTRUCTURE
 <br> *Definition of `MUTABLE`
 <br> 1. prone to change : inconstant
@@ -33,7 +33,7 @@ For these reasons, most IaC is implemented as **<ins>`Immutable infrastructure`<
 <br>➡️  1.[www.hashicorp.com](https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure)
 <br>➡️  2. A very good explanation available on [YouTube](https://www.youtube.com/watch?v=5qQQ3yzbKp8&ab_channel=CoreySchafer)
 
-# WHAT IS THE DIFFERENCE BETWEEN IMPERATIVE AND DECLARATIVE APPROACH ✅ 🧑‍💻
+# WHAT IS THE DIFFERENCE BETWEEN IMPERATIVE AND DECLARATIVE APPROACH ✅
 ##  IMPERATIVE OR PROCEDURAL APPROACH 
 - Type of programming paradigm that describes how the program executes.
 - You are more concerned with how to get an answer step by step.
@@ -69,7 +69,7 @@ To install apache on CentOS it is not important to give exact steps to achive th
 <br>➡️  2.[geeksforgeeks.org](https://www.geeksforgeeks.org/difference-between-imperative-and-declarative-programming/)
 [title](https://www.example.com)
 
-# WHAT IS IDEMPOTANCE ✅ 🧑‍💻
+# WHAT IS IDEMPOTANCE ✅
 - The idempotent characteristic provided by IaC tools ensures that, even if the same code is applied multiple times, the result remains the same.
 
 **<ins>Link to the Source</ins>**
