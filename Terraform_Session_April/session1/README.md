@@ -15,7 +15,7 @@
 
 # WHAT IS THE DIFFERENCE BETWEEN MUTABLE INFRASTRUCTURE AND IMMUTABLE INFRASTRUCTURE ✅
 
-#### MUTABLE AND IMMUTABLE DEFINITION
+### MUTABLE AND IMMUTABLE DEFINITION
 
 <br> From Merriam Webster:
 <br> Definition of `MUTABLE`
@@ -29,3 +29,6 @@ Mutable infrastructure is infrastructure that can be modified or updated after i
 
 #### IMMUTABLE INFRASTRUCTURE
 For these reasons, most IaC is implemented as immutable infrastructure—infrastructure that cannot be modified once originally provisioned. If immutable infrastructure needs to be changed, it has to be replaced with new infrastructure. Because new infrastructure can be spun up quickly on the cloud—particularly with IaC—immutable infrastructure is much more feasible and practical than it sounds.
+
+**<ins>Link to the Source</ins>**
+<br>A very good explanation available on [YouTube](https://www.youtube.com/watch?v=5qQQ3yzbKp8&ab_channel=CoreySchafer)
