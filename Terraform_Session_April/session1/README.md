@@ -20,11 +20,13 @@
 <br> **Definition of `MUTABLE`
 <br> 1. prone to change : inconstant
 <br> 2. a: capable of change or of being changed; b: capable of or liable to mutation
+
 **<ins>`Mutable infrastructure`</ins>** is infrastructure that can be modified or updated after it is originally provisioned. Mutable infrastructure gives development teams the flexibility to make ad hoc server customizations to, say, more closely fit development or application requirements or respond to an emergent security issue. But, it also undermines a key IaC benefit—the ability to maintain consistency between deployments or within versions—and can make infrastructure version tracking much more difficult.
 
 ## MUTABLE INFRASTRUCTURE
 <br> Definition of `IMMUTABLE`
 <br> 1. not capable of or susceptible to change 
+
 For these reasons, most IaC is implemented as **<ins>`Immutable infrastructure`</ins>**—infrastructure that cannot be modified once originally provisioned. If immutable infrastructure needs to be changed, it has to be replaced with new infrastructure. Because new infrastructure can be spun up quickly on the cloud—particularly with IaC—immutable infrastructure is much more feasible and practical than it sounds.
 
 **<ins>Link to the Source</ins>**
