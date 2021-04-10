@@ -60,8 +60,8 @@ For these reasons, most IaC is implemented as immutable infrastructure—infrast
 3.          name: httpd
 ```
 **<ins>Link to the Source</ins>**
-- <br>A good example is here [YouTube.com](https://www.youtube.com/watch?v=yOBBkIJBEL8&ab_channel=TadasPetra)
-- <br>[geeksforgeeks.org](https://www.geeksforgeeks.org/difference-between-imperative-and-declarative-programming/)
+-<br>A good example is here [YouTube.com](https://www.youtube.com/watch?v=yOBBkIJBEL8&ab_channel=TadasPetra)
+-<br>[geeksforgeeks.org](https://www.geeksforgeeks.org/difference-between-imperative-and-declarative-programming/)
 [title](https://www.example.com)
 
 # WHAT IS IDEMPOTANCE ✅
