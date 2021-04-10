@@ -7,11 +7,11 @@
  * By codifying and documenting your configuration specifications, IaC aids configuration management and helps you to avoid undocumented, ad-hoc configuration changes.
  
  **<ins>Link to the Source</ins>**
- <br>1.[HashiCorp](https://www.terraform.io/)
- <br>2.[YouTube.com](https://www.youtube.com/watch?v=POPP2WTJ8es&ab_channel=TechWorldwithNana)
+ <br>➡️  1.[HashiCorp](https://www.terraform.io/)
+ <br>➡️  2.[YouTube.com](https://www.youtube.com/watch?v=POPP2WTJ8es&ab_channel=TechWorldwithNana)
  <br>3.[Medium.com](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
- <br>4.[RedHat.com](https://www.redhat.com/en/topics/automation/)
- <br>5.[Stackify.com](https://stackify.com/what-is-infrastructure-as-code-how-it-works-best-practices-tutorials/)
+ <br>➡️  4.[RedHat.com](https://www.redhat.com/en/topics/automation/)
+ <br>➡️  5.[Stackify.com](https://stackify.com/what-is-infrastructure-as-code-how-it-works-best-practices-tutorials/)
 
 
 # WHAT IS THE DIFFERENCE BETWEEN MUTABLE INFRASTRUCTURE AND IMMUTABLE INFRASTRUCTURE ✅
@@ -29,8 +29,8 @@ Mutable infrastructure is infrastructure that can be modified or updated after i
 For these reasons, most IaC is implemented as immutable infrastructure—infrastructure that cannot be modified once originally provisioned. If immutable infrastructure needs to be changed, it has to be replaced with new infrastructure. Because new infrastructure can be spun up quickly on the cloud—particularly with IaC—immutable infrastructure is much more feasible and practical than it sounds.
 
 **<ins>Link to the Source</ins>**
-<br> 1.[www.hashicorp.com](https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure)
-<br>2. A very good explanation available on [YouTube](https://www.youtube.com/watch?v=5qQQ3yzbKp8&ab_channel=CoreySchafer)
+<br>➡️  1.[www.hashicorp.com](https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure)
+<br>➡️  2. A very good explanation available on [YouTube](https://www.youtube.com/watch?v=5qQQ3yzbKp8&ab_channel=CoreySchafer)
 
 # WHAT IS THE DIFFERENCE BETWEEN IMPERATIVE AND DECLARATIVE APPROACH ✅
 #### <ins> IMPERATIVE OR PROCEDURAL APPROACH </ins>
@@ -60,13 +60,13 @@ For these reasons, most IaC is implemented as immutable infrastructure—infrast
 3.          name: httpd
 ```
 **<ins>Link to the Source</ins>**
-<br>1.A good example is here [YouTube.com](https://www.youtube.com/watch?v=yOBBkIJBEL8&ab_channel=TadasPetra)
-<br>2.[geeksforgeeks.org](https://www.geeksforgeeks.org/difference-between-imperative-and-declarative-programming/)
+<br>➡️  1.A good example is here [YouTube.com](https://www.youtube.com/watch?v=yOBBkIJBEL8&ab_channel=TadasPetra)
+<br>➡️  2.[geeksforgeeks.org](https://www.geeksforgeeks.org/difference-between-imperative-and-declarative-programming/)
 [title](https://www.example.com)
 
 # WHAT IS IDEMPOTANCE ✅
 - The idempotent characteristic provided by IaC tools ensures that, even if the same code is applied multiple times, the result remains the same.
 
 **<ins>Link to the Source</ins>**
- <br>➡️1. [YouTube](https://www.youtube.com/watch?v=UaKZ4wKytcA&ab_channel=CoreySchafer)
-<br>➡️ 2. [Medium.com](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
+ <br>➡️  1. [YouTube](https://www.youtube.com/watch?v=UaKZ4wKytcA&ab_channel=CoreySchafer)
+<br>➡️   2. [Medium.com](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
