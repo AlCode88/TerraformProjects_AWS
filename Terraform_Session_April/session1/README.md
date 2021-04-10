@@ -7,6 +7,7 @@
  * By codifying and documenting your configuration specifications, IaC aids configuration management and helps you to avoid undocumented, ad-hoc configuration changes.
  
  **<ins>Link to the Source</ins>**
+<br>[HashiCorp](https://www.terraform.io/)
 <br>[YouTube.com](https://www.youtube.com/watch?v=POPP2WTJ8es&ab_channel=TechWorldwithNana)
 <br>[Medium.com](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
 <br>[RedHat.com](https://www.redhat.com/en/topics/automation/)
@@ -31,9 +32,10 @@ Mutable infrastructure is infrastructure that can be modified or updated after i
 For these reasons, most IaC is implemented as immutable infrastructure—infrastructure that cannot be modified once originally provisioned. If immutable infrastructure needs to be changed, it has to be replaced with new infrastructure. Because new infrastructure can be spun up quickly on the cloud—particularly with IaC—immutable infrastructure is much more feasible and practical than it sounds.
 
 **<ins>Link to the Source</ins>**
+<br>[www.hashicorp.com](https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure)
 <br>A very good explanation available on [YouTube](https://www.youtube.com/watch?v=5qQQ3yzbKp8&ab_channel=CoreySchafer)
 
-# WHAT IS THE DIFFERENCE BETWEEN IMPERATIVE AND DECLARATIVE APPROACH
+# WHAT IS THE DIFFERENCE BETWEEN IMPERATIVE AND DECLARATIVE APPROACH ✅
 #### IMPERATIVE OR PROCEDURAL APPROACH
 - Type of programming paradigm that describes how the program executes.
 - You are more concerned with how to get an answer step by step.
@@ -50,7 +52,7 @@ For these reasons, most IaC is implemented as immutable infrastructure—infrast
 ```
 #### <ins> DECLARATIVE APPROACH </ins>
 - You just giving the desired state without really specifying the steps that needs to be taken. 
-- Declaraion of the final result.
+- Declaraion without order to get the final result.
 - Good example is Terraform
 
 **DECLARATIVE EXAMPLE: To install apache on CentOS it is not important to give exact steps to achive the desired state. It will succeed**
@@ -60,3 +62,15 @@ For these reasons, most IaC is implemented as immutable infrastructure—infrast
 1.       - name: Install httpd on CentOS
 3.          name: httpd
 ```
+**<ins>Link to the Source</ins>**
+<br>A good example is here [YouTube.com](https://www.youtube.com/watch?v=yOBBkIJBEL8&ab_channel=TadasPetra)
+<br>[geeksforgeeks.org](https://www.geeksforgeeks.org/difference-between-imperative-and-declarative-programming/)
+[title](https://www.example.com)
+
+# WHAT IS IDEMPOTANCE ✅
+- The idempotent characteristic provided by IaC tools ensures that, even if the same code is applied multiple times, the result remains the same.
+
+**<ins>Link to the Source</ins>**
+[YouTube](https://www.youtube.com/watch?v=UaKZ4wKytcA&ab_channel=CoreySchafer)
+[Medium.com](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
+
