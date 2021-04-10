@@ -9,7 +9,7 @@
  **<ins>Link to the Source</ins>**
  <br>➡️  1.[HashiCorp](https://www.terraform.io/)
  <br>➡️  2.[YouTube.com](https://www.youtube.com/watch?v=POPP2WTJ8es&ab_channel=TechWorldwithNana)
- <br>3.[Medium.com](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
+ <br>➡️  3.[Medium.com](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
  <br>➡️  4.[RedHat.com](https://www.redhat.com/en/topics/automation/)
  <br>➡️  5.[Stackify.com](https://stackify.com/what-is-infrastructure-as-code-how-it-works-best-practices-tutorials/)
 
@@ -19,14 +19,14 @@
 <br> Definition of `IMMUTABLE`
 <br> 1. not capable of or susceptible to change 
 
-Mutable infrastructure is infrastructure that can be modified or updated after it is originally provisioned. Mutable infrastructure gives development teams the flexibility to make ad hoc server customizations to, say, more closely fit development or application requirements or respond to an emergent security issue. But, it also undermines a key IaC benefit—the ability to maintain consistency between deployments or within versions—and can make infrastructure version tracking much more difficult.
+`**<ins>Mutable infrastructure</ins>**` is infrastructure that can be modified or updated after it is originally provisioned. Mutable infrastructure gives development teams the flexibility to make ad hoc server customizations to, say, more closely fit development or application requirements or respond to an emergent security issue. But, it also undermines a key IaC benefit—the ability to maintain consistency between deployments or within versions—and can make infrastructure version tracking much more difficult.
 
 ## IMMUTABLE INFRASTRUCTURE
 <br> **Definition of `MUTABLE`
 <br> 1. prone to change : inconstant
 <br> 2. a: capable of change or of being changed; b: capable of or liable to mutation
 
-For these reasons, most IaC is implemented as immutable infrastructure—infrastructure that cannot be modified once originally provisioned. If immutable infrastructure needs to be changed, it has to be replaced with new infrastructure. Because new infrastructure can be spun up quickly on the cloud—particularly with IaC—immutable infrastructure is much more feasible and practical than it sounds.
+For these reasons, most IaC is implemented as `**<ins>immutable infrastructure</ins>**`—infrastructure that cannot be modified once originally provisioned. If immutable infrastructure needs to be changed, it has to be replaced with new infrastructure. Because new infrastructure can be spun up quickly on the cloud—particularly with IaC—immutable infrastructure is much more feasible and practical than it sounds.
 
 **<ins>Link to the Source</ins>**
 <br>➡️  1.[www.hashicorp.com](https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure)
