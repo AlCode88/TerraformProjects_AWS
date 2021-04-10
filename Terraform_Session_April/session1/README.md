@@ -14,7 +14,9 @@
 
 
 # WHAT IS THE DIFFERENCE BETWEEN MUTABLE INFRASTRUCTURE AND IMMUTABLE INFRASTRUCTURE ✅
+
 #### MUTABLE AND IMMUTABLE DEFINITION
+
 <br> From Merriam Webster:
 <br> Definition of `MUTABLE`
 <br> 1. prone to change : inconstant
