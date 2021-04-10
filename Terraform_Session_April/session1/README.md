@@ -7,11 +7,11 @@
  * By codifying and documenting your configuration specifications, IaC aids configuration management and helps you to avoid undocumented, ad-hoc configuration changes.
  
  **<ins>Link to the Source</ins>**
-1. <br>[HashiCorp](https://www.terraform.io/)
-2. <br>[YouTube.com](https://www.youtube.com/watch?v=POPP2WTJ8es&ab_channel=TechWorldwithNana)
-3. <br>[Medium.com](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
-4. <br>[RedHat.com](https://www.redhat.com/en/topics/automation/)
-5. <br>[Stackify.com](https://stackify.com/what-is-infrastructure-as-code-how-it-works-best-practices-tutorials/)
+ <br>1.[HashiCorp](https://www.terraform.io/)
+ <br>2.[YouTube.com](https://www.youtube.com/watch?v=POPP2WTJ8es&ab_channel=TechWorldwithNana)
+ <br>3.[Medium.com](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
+ <br>4.[RedHat.com](https://www.redhat.com/en/topics/automation/)
+ <br>5.[Stackify.com](https://stackify.com/what-is-infrastructure-as-code-how-it-works-best-practices-tutorials/)
 
 
 # WHAT IS THE DIFFERENCE BETWEEN MUTABLE INFRASTRUCTURE AND IMMUTABLE INFRASTRUCTURE ✅
@@ -22,7 +22,7 @@
 Mutable infrastructure is infrastructure that can be modified or updated after it is originally provisioned. Mutable infrastructure gives development teams the flexibility to make ad hoc server customizations to, say, more closely fit development or application requirements or respond to an emergent security issue. But, it also undermines a key IaC benefit—the ability to maintain consistency between deployments or within versions—and can make infrastructure version tracking much more difficult.
 
 #### IMMUTABLE INFRASTRUCTURE
-<br> **Definition of `MUTABLE`**
+<br> **Definition of `MUTABLE`
 <br> 1. prone to change : inconstant
 <br> 2. a: capable of change or of being changed; b: capable of or liable to mutation
 
@@ -60,8 +60,8 @@ For these reasons, most IaC is implemented as immutable infrastructure—infrast
 3.          name: httpd
 ```
 **<ins>Link to the Source</ins>**
-<br>A good example is here [YouTube.com](https://www.youtube.com/watch?v=yOBBkIJBEL8&ab_channel=TadasPetra)
-<br>[geeksforgeeks.org](https://www.geeksforgeeks.org/difference-between-imperative-and-declarative-programming/)
+<br>1.A good example is here [YouTube.com](https://www.youtube.com/watch?v=yOBBkIJBEL8&ab_channel=TadasPetra)
+<br>2.[geeksforgeeks.org](https://www.geeksforgeeks.org/difference-between-imperative-and-declarative-programming/)
 [title](https://www.example.com)
 
 # WHAT IS IDEMPOTANCE ✅
@@ -70,3 +70,7 @@ For these reasons, most IaC is implemented as immutable infrastructure—infrast
 **<ins>Link to the Source</ins>**
 <br>1. [YouTube](https://www.youtube.com/watch?v=UaKZ4wKytcA&ab_channel=CoreySchafer)
 <br>2. [Medium.com](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
+
+<div style="background-color:rgba(0, 0, 0, 0.0470588); text-align:center; vertical-align: middle; padding:40px 0; margin-top:30px">
+<a href="/blog">VIEW THE BLOG</a>
+</div>
