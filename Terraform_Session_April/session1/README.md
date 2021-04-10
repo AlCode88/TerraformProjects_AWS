@@ -1,5 +1,5 @@
-# WHAT IS THE INFRASTRUCTURE AS A CODE ✅
- * You **`write`** and **`execute`** the code to **`define, deploy, update,`** and **`destroy**` your infrastructure
+# WHAT IS THE INFRASTRUCTURE AS A CODE ✅ 🧑‍💻
+ * You **`write`** and **`execute`** the code to **`define, deploy, update,`** and **`destroy`** your infrastructure
  * Infrastructure as Code (IaC) is the **`managing`** and **`provisioning of infrastructure through code`** instead of through manual processes.
  *  Infrastructure as code is the **`process of managing and provisioning computer data centers through machine-readable definition files,`** rather than physical hardware configuration or interactive configuration tools.
  * With IaC, configuration files are created that **`contain your infrastructure specifications,`** which makes it easier to edit and distribute configurations.
@@ -15,16 +15,16 @@
 
 
 # WHAT IS THE DIFFERENCE BETWEEN MUTABLE INFRASTRUCTURE AND IMMUTABLE INFRASTRUCTURE ✅
-
+🧑‍💻
 ## IMMUTABLE INFRASTRUCTURE
-<br> **Definition of `MUTABLE`
+<br> *Definition of `MUTABLE`
 <br> 1. prone to change : inconstant
 <br> 2. a: capable of change or of being changed; b: capable of or liable to mutation
 
 **<ins>`Mutable infrastructure`</ins>** is infrastructure that can be modified or updated after it is originally provisioned. Mutable infrastructure gives development teams the flexibility to make ad hoc server customizations to, say, more closely fit development or application requirements or respond to an emergent security issue. But, it also undermines a key IaC benefit—the ability to maintain consistency between deployments or within versions—and can make infrastructure version tracking much more difficult.
 
 ## MUTABLE INFRASTRUCTURE
-<br> Definition of `IMMUTABLE`
+<br> *Definition of `IMMUTABLE`
 <br> 1. not capable of or susceptible to change 
 
 For these reasons, most IaC is implemented as **<ins>`Immutable infrastructure`</ins>**—infrastructure that cannot be modified once originally provisioned. If immutable infrastructure needs to be changed, it has to be replaced with new infrastructure. Because new infrastructure can be spun up quickly on the cloud—particularly with IaC—immutable infrastructure is much more feasible and practical than it sounds.
@@ -33,7 +33,7 @@ For these reasons, most IaC is implemented as **<ins>`Immutable infrastructure`<
 <br>➡️  1.[www.hashicorp.com](https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure)
 <br>➡️  2. A very good explanation available on [YouTube](https://www.youtube.com/watch?v=5qQQ3yzbKp8&ab_channel=CoreySchafer)
 
-# WHAT IS THE DIFFERENCE BETWEEN IMPERATIVE AND DECLARATIVE APPROACH ✅
+# WHAT IS THE DIFFERENCE BETWEEN IMPERATIVE AND DECLARATIVE APPROACH ✅ 🧑‍💻
 ##  IMPERATIVE OR PROCEDURAL APPROACH 
 - Type of programming paradigm that describes how the program executes.
 - You are more concerned with how to get an answer step by step.
@@ -69,7 +69,7 @@ To install apache on CentOS it is not important to give exact steps to achive th
 <br>➡️  2.[geeksforgeeks.org](https://www.geeksforgeeks.org/difference-between-imperative-and-declarative-programming/)
 [title](https://www.example.com)
 
-# WHAT IS IDEMPOTANCE ✅
+# WHAT IS IDEMPOTANCE ✅ 🧑‍💻
 - The idempotent characteristic provided by IaC tools ensures that, even if the same code is applied multiple times, the result remains the same.
 
 **<ins>Link to the Source</ins>**
