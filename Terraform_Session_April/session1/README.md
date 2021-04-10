@@ -70,4 +70,3 @@ For these reasons, most IaC is implemented as immutable infrastructure—infrast
 **<ins>Link to the Source</ins>**
 1. <br>[YouTube](https://www.youtube.com/watch?v=UaKZ4wKytcA&ab_channel=CoreySchafer)
 2. <br>[Medium.com](https://medium.com/bb-tutorials-and-thoughts/250-practice-questions-for-terraform-associate-certification-7a3ccebe6a1a)
-
