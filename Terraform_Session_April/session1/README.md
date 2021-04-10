@@ -14,11 +14,11 @@
 
 
 # What is the difference between immutable infrastructure vs mutable infrastructure ✅
-#### **MUTABLE AND IMMUTABLE DEFINITION**
-From Merriam Webster:
-Definition of MUTABLE
-1. prone to change : inconstant
-2. a: capable of change or of being changed; b: capable of or liable to mutation
+#### MUTABLE AND IMMUTABLE DEFINITION
+<br>From Merriam Webster:
+<br>Definition of MUTABLE
+<br>1. prone to change : inconstant
+<br>2. a: capable of change or of being changed; b: capable of or liable to mutation
 
-Definition of IMMUTABLE
-1. not capable of or susceptible to change
+<br>Definition of IMMUTABLE
+<br>1. not capable of or susceptible to change
