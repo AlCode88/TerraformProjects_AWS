@@ -5,4 +5,5 @@
 * With IaC, configuration files are created that contain your infrastructure specifications, which makes it easier to edit and distribute configurations.
 * It ensures that you provision the same environment every time.
 * By codifying and documenting your configuration specifications, IaC aids configuration management and helps you to avoid undocumented, ad-hoc configuration changes.
-* 
+
+`code` 
