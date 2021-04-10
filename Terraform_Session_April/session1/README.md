@@ -15,7 +15,6 @@
 
 
 # WHAT IS THE DIFFERENCE BETWEEN MUTABLE INFRASTRUCTURE AND IMMUTABLE INFRASTRUCTURE ✅
-
 #### MUTABLE INFRASTRUCTURE
 <br> Definition of `IMMUTABLE`
 <br> 1. not capable of or susceptible to change 
@@ -61,8 +60,8 @@ For these reasons, most IaC is implemented as immutable infrastructure—infrast
 3.          name: httpd
 ```
 **<ins>Link to the Source</ins>**
-1. <br>A good example is here [YouTube.com](https://www.youtube.com/watch?v=yOBBkIJBEL8&ab_channel=TadasPetra)
-2. <br>[geeksforgeeks.org](https://www.geeksforgeeks.org/difference-between-imperative-and-declarative-programming/)
+- <br>A good example is here [YouTube.com](https://www.youtube.com/watch?v=yOBBkIJBEL8&ab_channel=TadasPetra)
+- <br>[geeksforgeeks.org](https://www.geeksforgeeks.org/difference-between-imperative-and-declarative-programming/)
 [title](https://www.example.com)
 
 # WHAT IS IDEMPOTANCE ✅
