@@ -34,17 +34,29 @@ For these reasons, most IaC is implemented as immutable infrastructure—infrast
 <br>A very good explanation available on [YouTube](https://www.youtube.com/watch?v=5qQQ3yzbKp8&ab_channel=CoreySchafer)
 
 # WHAT IS THE DIFFERENCE BETWEEN IMPERATIVE AND DECLARATIVE APPROACH
-#### IMPERATIVE APPROACH
+#### IMPERATIVE OR PROCEDURAL APPROACH
 - Type of programming paradigm that describes how the program executes.
 - You are more concerned with how to get an answer step by step.
 - It is consist of step by step solutions to get the final or desired result.
 - The order of execution is very important and uses both mutable and immutable.
 - Good Example is Ansible where you have to define step by step solutions to get the final result. 
 
-**To install apache on CentOS it is important to give exact steps or it will fail this immutable**
+**IMMPERATIVE EXAMPLE: To install apache on CentOS it is important to give exact steps or it will fail**
 ```
 1.       - name: Install httpd on CentOS
 2.         yum:
 3.          name: httpd
 4.          state: present
+```
+#### DECLARATIVE APPROACH
+- You just giving the desired state without really specifying the steps that needs to be taken. 
+- Declaraion of the final result.
+- Good example is Terraform
+
+**DECLARATIVE EXAMPLE: To install apache on CentOS it is not important to give exact steps to achive the desired state. It will succeed**
+```
+2.         yum:
+4.          state: present
+1.       - name: Install httpd on CentOS
+3.          name: httpd
 ```
