@@ -15,13 +15,13 @@
 
 
 # WHAT IS THE DIFFERENCE BETWEEN MUTABLE INFRASTRUCTURE AND IMMUTABLE INFRASTRUCTURE ✅
-#### MUTABLE INFRASTRUCTURE
+## MUTABLE INFRASTRUCTURE
 <br> Definition of `IMMUTABLE`
 <br> 1. not capable of or susceptible to change 
 
 Mutable infrastructure is infrastructure that can be modified or updated after it is originally provisioned. Mutable infrastructure gives development teams the flexibility to make ad hoc server customizations to, say, more closely fit development or application requirements or respond to an emergent security issue. But, it also undermines a key IaC benefit—the ability to maintain consistency between deployments or within versions—and can make infrastructure version tracking much more difficult.
 
-#### IMMUTABLE INFRASTRUCTURE
+## IMMUTABLE INFRASTRUCTURE
 <br> **Definition of `MUTABLE`
 <br> 1. prone to change : inconstant
 <br> 2. a: capable of change or of being changed; b: capable of or liable to mutation
@@ -33,7 +33,7 @@ For these reasons, most IaC is implemented as immutable infrastructure—infrast
 <br>➡️  2. A very good explanation available on [YouTube](https://www.youtube.com/watch?v=5qQQ3yzbKp8&ab_channel=CoreySchafer)
 
 # WHAT IS THE DIFFERENCE BETWEEN IMPERATIVE AND DECLARATIVE APPROACH ✅
-#### <ins> IMPERATIVE OR PROCEDURAL APPROACH </ins>
+## <ins> IMPERATIVE OR PROCEDURAL APPROACH </ins>
 - Type of programming paradigm that describes how the program executes.
 - You are more concerned with how to get an answer step by step.
 - It is consist of step by step solutions to get the final or desired result.
@@ -47,7 +47,7 @@ For these reasons, most IaC is implemented as immutable infrastructure—infrast
 3.          name: httpd
 4.          state: present
 ```
-#### <ins> DECLARATIVE APPROACH </ins>
+## <ins> DECLARATIVE APPROACH </ins>
 - You just giving the desired state without really specifying the steps that needs to be taken. 
 - Declaraion without order to get the final result.
 - Good example is Terraform
