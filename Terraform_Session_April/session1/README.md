@@ -13,5 +13,5 @@
 <br>[Stackify.com](https://stackify.com/what-is-infrastructure-as-code-how-it-works-best-practices-tutorials/)
 
 
-# 2)What is the difference between immutable infrastructure vs mutable infrastructure ✅
-### **MUTABLE AND IMMUTABLE DEFINITION**
+# What is the difference between immutable infrastructure vs mutable infrastructure ✅
+#### **MUTABLE AND IMMUTABLE DEFINITION**
