@@ -7,5 +7,6 @@
  * By codifying and documenting your configuration specifications, IaC aids configuration management and helps you to avoid undocumented, ad-hoc configuration changes.
  ### Link to the Source
  [RedHat](https://www.redhat.com/en/topics/automation/)
+ [Stacky](https://stackify.com/what-is-infrastructure-as-code-how-it-works-best-practices-tutorials/)
 
 # What is the difference between immutable infra vs mutable infra?
