@@ -1,4 +1,4 @@
-# What is the Infrastructure as a Code ✅
+# WHAT IS THE INFRASTRUCTURE AS A CODE ✅
  * You **`write`** and **`execute`** the code to **`define, deploy, update,`** and **`destroy**` your infrastructure
  * Infrastructure as Code (IaC) is the **`managing`** and **`provisioning of infrastructure through code`** instead of through manual processes.
  *  Infrastructure as code is the **`process of managing and provisioning computer data centers through machine-readable definition files,`** rather than physical hardware configuration or interactive configuration tools.
@@ -13,12 +13,17 @@
 <br>[Stackify.com](https://stackify.com/what-is-infrastructure-as-code-how-it-works-best-practices-tutorials/)
 
 
-# What is the difference between immutable infrastructure vs mutable infrastructure ✅
+# WHAT IS THE DIFFERENCE BETWEEN MUTABLE INFRASTRUCTURE AND IMMUTABLE INFRASTRUCTURE ✅
 #### MUTABLE AND IMMUTABLE DEFINITION
 <br> From Merriam Webster:
 <br> Definition of `MUTABLE`
 <br> 1. prone to change : inconstant
 <br> 2. a: capable of change or of being changed; b: capable of or liable to mutation
-
 <br> Definition of `IMMUTABLE`
 <br> 1. not capable of or susceptible to change
+
+#### MUTABLE INFRASTRUCTURE 
+Mutable infrastructure is infrastructure that can be modified or updated after it is originally provisioned. Mutable infrastructure gives development teams the flexibility to make ad hoc server customizations to, say, more closely fit development or application requirements or respond to an emergent security issue. But, it also undermines a key IaC benefit—the ability to maintain consistency between deployments or within versions—and can make infrastructure version tracking much more difficult.
+
+#### IMMUTABLE INFRASTRUCTURE
+For these reasons, most IaC is implemented as immutable infrastructure—infrastructure that cannot be modified once originally provisioned. If immutable infrastructure needs to be changed, it has to be replaced with new infrastructure. Because new infrastructure can be spun up quickly on the cloud—particularly with IaC—immutable infrastructure is much more feasible and practical than it sounds.
