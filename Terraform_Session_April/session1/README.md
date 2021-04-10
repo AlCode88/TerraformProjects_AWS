@@ -40,8 +40,9 @@ For these reasons, most IaC is implemented as immutable infrastructure—infrast
 - The order of execution is very important and uses both mutable and immutable.
 - Good Example is Ansible where you have to define step by step solutions to get the final result. 
 
-**IMMPERATIVE EXAMPLE: To install apache on CentOS it is important to give exact steps or it will fail**
+**EXAMPLE:**
 ```
+To install apache on CentOS it is important to give exact steps or it will fail
 1.       - name: Install httpd on CentOS
 2.         yum:
 3.          name: httpd
@@ -52,8 +53,9 @@ For these reasons, most IaC is implemented as immutable infrastructure—infrast
 - Declaraion without order to get the final result.
 - Good example is Terraform
 
-**EXAMPLE: To install apache on CentOS it is not important to give exact steps to achive the desired state. It will succeed**
+**EXAMPLE:**
 ```
+To install apache on CentOS it is not important to give exact steps to achive the desired state. It will succeed
 2.         yum:
 4.          state: present
 1.       - name: Install httpd on CentOS
