@@ -1,1 +1,2 @@
-env = "dev1"
+env = "qa"
+instance_type = "t3.micro"
