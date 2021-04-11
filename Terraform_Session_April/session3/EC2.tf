@@ -6,6 +6,6 @@ resource "aws_instance" "session3_EC2" {
   user_data               = file("userdata.sh")
 
   tags = {
-    Name = "Instance-2"
+    Name = var.env
   }
 }
