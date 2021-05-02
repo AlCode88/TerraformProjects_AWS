@@ -1,1 +1,1 @@
-# VPC (Virtual Private Network)
+# VPC (Virtual Private Cloud)
