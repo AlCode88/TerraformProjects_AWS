@@ -1,8 +1,6 @@
-#Terraform project
-
+# Terraform project
 
 ## Resoures created.
-
 1) VPC
 2) Internet Gateway
 3) Route Table
@@ -13,11 +11,9 @@
 8) EIP
 9) EC2 Apache app server
 
-## User_Data
-!/bin/bash
-sudo yum install httpd -y
-sudo systemctl start httpd -y
-sudo systemctl enable httpd -y
-sudo echo "Hello World from Terraform project" > /var/www/html/index.html
-
- 
+### User_Data
+<br> !/bin/bash
+<br> sudo yum install httpd -y
+<br> sudo systemctl start httpd -y
+<br> sudo systemctl enable httpd -y
+<br> sudo echo "Hello World from Terraform project" > /var/www/html/index.html
